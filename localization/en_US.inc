@@ -2,6 +2,7 @@
 
 $labels = array();
 $labels['report_junk_buttontitle'] = 'Report as Spam';
+$labels['report_junk_buttontext'] = 'Spam';
 $labels['report_junk_reportedasjunk'] = 'Successfully reported as Spam';
 $labels['report_junk_question'] = 'Report mails as SPAM?';
 $labels['report_junk'] = 'Do you want to report the selected mail(s) to the following Spamprotection Services in order to improve automated spamdetection measures?';

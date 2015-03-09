@@ -2,6 +2,7 @@
 // translation done by Ulli Heist - http://heist.hobby-site.org/
 $labels = array();
 $labels['report_junk_buttontitle'] = 'als SPAM melden';
+$labels['report_junk_buttontext'] = 'Spam';
 $labels['report_junk_reportedasjunk'] = 'Erfolgreich als SPAM gemeldet';
 $labels['report_junk_question'] = 'Mail(s) als SPAM melden?';
 $labels['report_junk'] = 'Wollen Sie die markierte(n) Mail(s) bei den folgenden Diensten als Spam melden, um die automatische Spamerkennung zu verbessern?';

@@ -35,11 +35,13 @@ class report_junk extends rcube_plugin
       $this->include_script('report_junk.js');
       $this->add_texts('localization', true);
       $this->add_button(array(
-        'command' => $command,
-        'imagepas' => $skin_path.'/report_pas.png',
-        'imageact' => $skin_path.'/report_act.png',
+      	'type' => 'link',
+        'class' => 'button',
+	'style' => 'background-image:url(plugins/report_junk/skins/larry/report_act.png);background-position:10px 0px;',
+	'command' => $command,
         'width' => 32,
         'height' => 32,
+	'label' => 'report_junk.report_junk_buttontext',
         'title' => 'report_junk.report_junk_buttontitle'), 'toolbar');
     }
   }

@@ -7,7 +7,7 @@ function rcmail_report_junk_dialog(prop) {
 function rcmail_report_junk_showdialog(result) {
 	var dialog = $('<div>')
 		.attr('id', 'report_junkdialog')
-		.attr('style', 'z-index:100;white-space:normal;line-height:1.5em;position:absolute;top:50%;left:10%;max-width:500px;margin-left:-250px;padding:20px;border:1px solid black;background-color:white;')
+		.attr('style', 'z-index:100;white-space:normal;line-height:1.5em;position:absolute;top:50%;left:10%;max-width:500px;padding:20px;border:1px solid black;background-color:white;')
 		.html(result.text),
 	  always = $('<input>')
 		.attr('type', 'button')
@@ -29,10 +29,9 @@ function rcmail_report_junk_showdialog(result) {
 	dialog.append(once);
 	dialog.append(no);
 	dialog.append('</p><p><small>Powered by <a style="float:none;display:inline;padding-right:0px;" href="http://www.tralios.de">Tralios IT</a> and <a style="float:none;display:inline;padding-right:0px;" href="http://www.blackhole.mx">Blackhole.MX</a></small></p>');
-	
 	// add and register
-	rcmail.add_element(dialog, 'toolbar');
-	
+	//rcmail.add_element(dialog, 'messagetoolbar');
+	$('#messagetoolbar').append(dialog);
 	always.click(rcmail_report_junk_hidedialog);
 	once.click(rcmail_report_junk_hidedialog);
 	no.click(rcmail_report_junk_hidedialog);
