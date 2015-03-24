@@ -190,7 +190,7 @@ class report_junk extends rcube_plugin
 	$header=$rcmail->imap->get_raw_headers($id);
 	$header=preg_replace('/^To:.*\n/m',"To:\n",$header);
 	$header=preg_replace('/^X-Original-To:.*\n/m',"X-Original-To:\n",$header);
-	$header=preg_replace('/^Delivered-To:.*\n/m',"Delivered-To:\n",$header);
+	#$header=preg_replace('/^Delivered-To:.*\n/m',"Delivered-To:\n",$header);
 	$header=preg_replace('/^\tfor <.*>;/m',"\tfor <>;",$header);
 	return $header;
   }
